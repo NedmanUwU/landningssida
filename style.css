@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+  
+    head {display:none;}
+  
+    html{
+      background-color: #000000;
+    }
+  
+  /* ----navigering----*/
+  .navigation{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    min-width: 100px;
+    min-height: 70px;
+    background-color: black;
+    flex-direction: row;
+    }
+  
+  .logo{
+    margin: auto;
+    margin-left: 30px;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .nav-links{
+    margin-top: 2%;
+    flex-direction: row;
+    align-self: flex-end;
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+   .nav-links > a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .nav-links > a {
+    margin: auto;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color:aliceblue;
+  } 
+  .nav-links :hover{
+    text-decoration: underline;
+    transition: 0.3s;
+    transform: scale(1.05);
+  }
+
+  .navigation .btn{
+    margin: auto;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  /*---Första sidan---*/
+  #header{
+    height: 100vh;
+    background-image: url('images/student.jpg');
+    background-size: cover;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  #header h1{
+    font-size: 70px;
+    color: white;
+  }
+  #header h2{
+    color: white;
+  }
+  #header a{
+    margin: 20px;
+    padding: 20px;
+    align-self: center;
+    background-color: blue;
+    border-radius: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  /*---Andra Sidan---*/
+  .Om-oss{
+    height: 100vh;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+
+  .content{
+    width: 50%;
+    margin: 15px;
+  }
+
+  .image {
+    margin: 5%;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .content h2{
+   font-size: 50px
+  }
+
+  .content p{
+    padding-top: 20px;
+  }
+
+    /*---TREDJE Sidan---*/
+    #Aktuellt{
+      background-color: #ffffff;
+    }
+    .aktuelltcontent{
+      height: 100vh;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+  #Aktuellt h2{
+    text-align: center;
+    padding: 15px;
+  }
+
+  .card{
+      width: 30%;
+      height: 70%;
+      border-radius: 5px;
+      flex-direction: column;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+
+   .card h3{
+    text-align: center;
+    padding: 10px 20px;
+   }
+
+   .card image{
+    width: 100%;
+    }
+
+/*---FJÄRDE Sidan---*/
+.Ansök{
+  background-color: #ffffff;
+}
+#Ansök{
+  height: 50vh;
+  text-align: center;
+  background-color: rgb(181, 239, 247);
+  background: cover;
+  border-radius: 70px;
+  margin: 10%;
+  margin-top: 0%;
+  flex-direction: column;
+}
+
+.innehåll{
+  flex-direction: row;
+}
+
+.kittybun{
+  width: 75px;
+  height: auto;
+  padding: 10px;
+}
+
+#Ansök a{
+  margin: 15px;
+  padding: 20px;
+  align-self: center;
+  background-color: blue;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/*---SISTA Sidan---*/
+#Kontakt{
+  background-color: rgb(109, 188, 230);
+  text-align: center;
+  font-weight: bold;
+}
+.Kontaktcontent{
+  height: 50vh;
+  flex-direction: row;
+}
+
+.column{
+  background-color: rgb(109, 188, 230);
+  width: 33%;
+  height: 100%;
+  padding: 10px;
+  height: 300px;
+  flex-direction: row;
+  text-align: left;
+  justify-content: flex-start;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+.logo2{
+  padding: 15px;
+  max-width: 500px;
+}
